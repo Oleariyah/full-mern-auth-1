@@ -1,0 +1,21 @@
+.active {
+    width: 18%;
+    animation: active 1s linear forwards;
+}
+
+.inactive {
+    width: 80%;
+    animation: inactive 1s linear forwards;
+}
+
+@keyframes active {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes inactive {
+ 100% {
+        width: 19%;
+    }
+}
