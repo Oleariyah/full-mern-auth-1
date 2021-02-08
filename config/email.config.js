@@ -7,8 +7,8 @@ const emailConfig = async (token, email, subject, type) => {
             host: 'smtp.ethereal.email',
             port: 587,
             auth: {
-                user: 'wilson.stiedemann75@ethereal.email',
-                pass: 'KmggPR2YrAhAFJmYmb'
+                user: `${process.env.NODEMAILER_USER}`,
+                pass: `${process.env.NODEMAILER_PASSWORD}`
             }
         });
 
